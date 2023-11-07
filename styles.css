@@ -1,17 +1,14 @@
-/* Estilizando o cabeçalho */
+/* Estilos comuns para cabeçalho, navegação, seções e links */
+header, nav, section, a {
+    text-align: center;
+}
+
 header {
     background-color: #333;
     color: #fff;
-    text-align: center;
     padding: 20px 0;
 }
 
-header h1 {
-    font-size: 2em;
-    margin: 0;
-}
-
-/* Estilizando a navegação */
 nav {
     background-color: #444;
     padding: 10px 0;
@@ -21,7 +18,6 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
 nav li {
@@ -29,9 +25,13 @@ nav li {
     margin: 0 10px;
 }
 
-nav a {
+a {
     text-decoration: none;
-    color: #fff;
+    color: #FFF;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /* Estilizando as seções */
@@ -42,50 +42,49 @@ section {
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     position: relative; /* Adicionado para posicionamento do link */
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 section h2 {
+    display: block;
+    text-align: center;
     font-size: 1.5em;
     color: #333;
 }
 
 section p {
     line-height: 1.4;
+    text-align: justify;
 }
 
-/* Estilizando a lista de tipos de pantallas táctiles */
-ul {
-    list-style: disc inside;
-    margin-left: 20px;
+section ul {
+    text-align: justify;
 }
 
-/* Estilizando benefícios da IPO */
-ul li {
-    list-style: square inside;
-    margin-left: 20px;
+section img {
+    max-width: 70%;
+    height: auto;
+    margin-top: 10px;
 }
 
-/* Estilizando links de âncoras */
-a {
-    color: #007acc;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
+/* Posicionando a imagem no canto direito apenas quando a tela for grande */
+@media (min-width: 768px) {
+    section img {
+        flex: 1;
+        max-width: 300px;
+        height: auto;
+        margin-top: 0;
+    }
 }
 
 /* Estilizando o link de retorno ao menu */
 .return-link {
     position: absolute;
-    bottom: 10px; /* Posição no canto inferior direito */
+    bottom: 10px;
     right: 10px;
     color: #007acc;
-}
-
-/* Estilizando o link de retorno ao menu ao passar o mouse */
-.return-link:hover {
-    text-decoration: underline;
+    margin: 10px;
 }
 
 /* Estilizando o rodapé */
@@ -101,12 +100,6 @@ footer p {
     font-size: 0.8em;
 }
 
-/* Estilizando links no rodapé */
 footer a {
     color: #007acc;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
 }
