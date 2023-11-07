@@ -1,0 +1,83 @@
+/* Estilo geral da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilizando o cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+/* Estilizando a navegação */
+nav {
+    background-color: #444;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilizando as seções */
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+section p {
+    line-height: 1.4;
+}
+
+/* Estilizando a lista de tipos de pantallas táctiles */
+ul {
+    list-style: disc inside;
+    margin-left: 20px;
+}
+
+/* Estilizando benefícios da IPO */
+ul li {
+    list-style: square inside;
+    margin-left: 20px;
+}
+
+/* Estilizando links de âncoras */
+a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
